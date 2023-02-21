@@ -29,7 +29,7 @@ function theme_scripts_and_styles()
     // Load in Bootstrap
     wp_enqueue_style(
         'bootstrap-css',
-        '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">',
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css',
         [],
         null
     );
@@ -40,12 +40,12 @@ function theme_scripts_and_styles()
         [],
         null
     );
-    // Load in Tailwind CSS
+    // Load in bootstrap CSS
     wp_enqueue_script(
         'bootstrap-js',
-        '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>',
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js',
         [],
-        null
+        true
     );
 
     // Load in local CSS {@link https://developer.wordpress.org/reference/functions/wp_enqueue_style/}
