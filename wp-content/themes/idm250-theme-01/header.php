@@ -8,6 +8,17 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <?php 
-    wp_body_open();
-    ?>
+  <?php
+  // @link https://developer.wordpress.org/reference/functions/wp_body_open/
+  // Fires the wp_body_open action.
+  wp_body_open();
+  ?>
+  <header>
+    <p>LOGO GOES HERE</p>
+    <nav class="main-menu">
+      <?php
+      // @link https://developer.wordpress.org/reference/functions/wp_nav_menu/
+      wp_nav_menu(['theme_location' => 'primary-menu']);
+  ?>
+    </nav>
+  </header>

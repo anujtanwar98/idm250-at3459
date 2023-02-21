@@ -26,6 +26,13 @@ function theme_scripts_and_styles()
         [],
         null
     );
+    // Load in Bootstrap
+    wp_enqueue_style(
+        'bootstrap-css',
+        '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">',
+        [],
+        null
+    );
     // Load in Font Awesome
     wp_enqueue_script(
         'font-awesome',
@@ -35,8 +42,8 @@ function theme_scripts_and_styles()
     );
     // Load in Tailwind CSS
     wp_enqueue_script(
-        'tailwind-css',
-        'https://cdn.tailwindcss.com',
+        'bootstrap-js',
+        '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>',
         [],
         null
     );
@@ -62,3 +69,45 @@ function theme_scripts_and_styles()
 add_action('wp_enqueue_scripts', 'theme_scripts_and_styles');
 
 add_theme_support('post-thumbnails');
+
+add_post_type_support('page', 'excerpt');
+
+
+/**
+ * Function to register custom post types
+ * @link https://developer.wordpress.org/reference/functions/register_post_type/
+ * @return void
+ */
+
+function register_custom_post_types()
+{
+    // register shoes post type
+    register_post_type(
+        'shoes',
+        [
+            'labels' => [
+                'name' => __('Shoes'),
+                'singular_name' => __('Shoe')
+            ],
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => ['slug' => 'shoes'],
+            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+            'show_in_rest' => true,
+        ]
+    );
+}
+add_action('init', 'register_custom_post_types');
+
+/**
+ * @link https://codex.wordpress.org/Navigation_Menus
+ * @return void
+ */
+function register_theme_menus()
+{
+    register_nav_menus([
+        'primary-menu' => 'Primary Menu',
+        'footer-menu' => 'Footer Menu'
+    ]);
+}
+add_action('init', 'register_theme_menus');
