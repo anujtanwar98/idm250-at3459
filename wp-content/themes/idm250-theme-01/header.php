@@ -22,27 +22,28 @@ $menu = get_theme_menu('primary-menu');
 
     <nav class="navbar navbar-expand-lg" style="background-color:#000">
       <div class="container-fluid">
-        <a href="<?php echo home_url(); ?>">
-          <img class="navbar-brand" src="https://res.cloudinary.com/dr8jiwn4u/image/upload/v1677448062/wordpress-logo/logo_lfbnyt.png" alt="Logo" width="80" height="me-auto" class="d-inline-block align-text-center">
+        <a class="text-decoration-none my-main-title" href="<?php echo home_url(); ?>">
+          <img class="navbar-brand" src="https://res.cloudinary.com/dr8jiwn4u/image/upload/v1677448062/wordpress-logo/logo_lfbnyt.png" alt="Logo" width="60" height="me-auto" class="d-inline-block align-text-center">
+          The Shoe Stitcher
         </a>
         <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler-icon top-bar"></span>
           <span class="toggler-icon middle-bar"></span>
           <span class="toggler-icon bottom-bar"></span>
         </button>
+        <div class='collapse navbar-collapse' id='navbarNav'>
+          <ul class='navbar-nav ms-auto'>
 
-        <?php
-          foreach ($menu as $menu_item) {
-            echo
-            "<div class='collapse navbar-collapse' id='navbarNav'>
-              <ul class='navbar-nav'>
-                <li class='nav-item my-nav-links'>
-                  <a class='nav-link active text-white my-nav-links-a' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>
-                </li>
-              </ul>
-            </div>";
-                  } ?>
-
+          <?php
+            foreach ($menu as $menu_item) {
+              echo
+              "
+                  <li class='nav-item my-nav-links'>
+                    <a class='nav-link  my-nav-links-a' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>
+                  </li>";
+                    } ?>
+          </ul>
+        </div>
       </div>
     </nav>
   <?php } ?>

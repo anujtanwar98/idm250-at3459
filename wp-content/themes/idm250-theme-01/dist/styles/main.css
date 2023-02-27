@@ -119,9 +119,29 @@
     transform: rotate(0deg);
 }
 
+.my-nav-links {
+    padding: 0 40px;
+}
+
+.my-nav-links-a {
+    color: var(--white-color);
+    font-family: poppins;
+    font-weight: 500;
+}
+
 .my-nav-links-a:hover {
     background-color: var(--main-color);
+    color: var(--black-color);
+    font-family: poppins;
+    font-weight: 600;
     border-radius: 10px;
+}
+
+.my-main-title {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--white-color);
 }
 
 @media screen and (max-width: 990px) {
@@ -135,6 +155,15 @@
         background-color: var(--black-color);
         border-radius: 0px;
     }
+}
+@media screen and (max-width: 550px) {
+    .my-main-title {
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: var(--white-color);
+    }
+    
 }
 
 
