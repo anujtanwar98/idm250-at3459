@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png">
     <title><?php echo get_the_title(); ?> | The Shoe Stitcher</title>
     <?php wp_head(); ?>
 </head>
