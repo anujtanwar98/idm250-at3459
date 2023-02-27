@@ -22,7 +22,9 @@ $menu = get_theme_menu('primary-menu');
 
     <nav class="navbar navbar-expand-lg" style="background-color:#000">
       <div class="container-fluid">
-        <img class="navbar-brand" src="https://res.cloudinary.com/dr8jiwn4u/image/upload/v1677448062/wordpress-logo/logo_lfbnyt.png" alt="Logo" width="80" height="me-auto" class="d-inline-block align-text-center">
+        <a href="<?php echo home_url(); ?>">
+          <img class="navbar-brand" src="https://res.cloudinary.com/dr8jiwn4u/image/upload/v1677448062/wordpress-logo/logo_lfbnyt.png" alt="Logo" width="80" height="me-auto" class="d-inline-block align-text-center">
+        </a>
         <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler-icon top-bar"></span>
           <span class="toggler-icon middle-bar"></span>
