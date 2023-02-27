@@ -1,7 +1,7 @@
-
-    <footer class="bg-dark">
+</div>
+    <footer class="main-footer">
         <p class="footer-copyright text-center py-3 mb-0 text-white">
-        &copy; Anuj Tanwar <?php echo date("Y"); ?>
+        &copy; The Shoe Stitcher <?php echo date("Y"); ?>
             <br>
             Only for Educational purposes only
         </p>

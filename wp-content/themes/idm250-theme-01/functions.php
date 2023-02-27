@@ -111,3 +111,14 @@ function register_theme_menus()
     ]);
 }
 add_action('init', 'register_theme_menus');
+
+function get_theme_menu($menu_name)
+{
+    // Get menu items as a flat array
+    $locations = get_nav_menu_locations();
+    $menu = wp_get_nav_menu_object($locations[$menu_name]);
+    $menu_items = wp_get_nav_menu_items($menu->term_id, ['order' => 'DESC']);
+    return $menu_items;
+}
+
+// add_action('init', 'register_theme_menus');
