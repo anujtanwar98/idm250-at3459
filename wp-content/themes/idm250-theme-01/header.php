@@ -23,7 +23,12 @@ $menu = get_theme_menu('primary-menu');
     <nav class="navbar navbar-expand-lg" style="background-color:#000">
       <div class="container-fluid">
         <a class="text-decoration-none my-main-title" href="<?php echo home_url(); ?>">
-          <img class="navbar-brand" src="https://res.cloudinary.com/dr8jiwn4u/image/upload/v1677448062/wordpress-logo/logo_lfbnyt.png" alt="Logo" width="60" height="me-auto" class="d-inline-block align-text-center">
+          <!-- <img class="navbar-brand" src="https://res.cloudinary.com/dr8jiwn4u/image/upload/v1677448062/wordpress-logo/logo_lfbnyt.png" alt="Logo" width="60" height="me-auto" class="d-inline-block align-text-center"> -->
+          <?php 
+          $image = get_field('logo', 'option');
+          if( !empty( $image ) ): ?>
+            <img class="navbar-brand" alt="Logo" width="60" height="me-auto" class="d-inline-block align-text-center" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+          <?php endif; ?>
           The Shoe Stitcher
         </a>
         <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
