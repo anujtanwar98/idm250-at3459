@@ -6,7 +6,7 @@
 
 :root{
     --main-color: #d5c8ff;
-    --sec-color: #EFC372;
+    --sec-color: #9f85f7;
     --ter-color: #FFF1D9;
     --fourth-color: #FFFCF7;
     --white-color: #fff;
@@ -192,3 +192,38 @@
 .single-page-title {
     font-size: 2.5rem;
 }
+
+
+/* 404 start */
+
+.my-error-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+  }
+
+.error-title {
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .error-sub {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .my-404-home {
+    background-color: var(--main-color);
+    border-color: var(--sec-color);
+  }
+  
+  .my-404-home:hover {
+    background-color: var(--sec-color);
+    border-color: var(--main-color);
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+  }
+
+/* 404 end */

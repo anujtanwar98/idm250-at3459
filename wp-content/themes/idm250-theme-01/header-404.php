@@ -39,10 +39,18 @@ $menu = get_theme_menu('primary-menu');
   
 
   <div class="main-content">
-  <div>
-  <?php 
-          $image = get_field('404NotFound', 'option');
-          if( !empty( $image ) ): ?>
-            <img class="not-found" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-          <?php endif; ?>
+  <div class="container my-error-container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center">
+        <?php 
+        $image = get_field('404NotFound', 'option');
+        if( !empty( $image ) ): ?>
+          <img class="not-found" src="<?php echo esc_url($image['url']); ?>" class="img-fluid" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+        <h1 class="error-title">404 Error Page</h1>
+        <p class="error-sub">The page you are looking for might have been removed or doesn't exist.</p>
+        <a href="<?php echo home_url(); ?>" class="btn btn-primary my-404-home">Go back to homepage</a>
+      </div>
+    </div>
   </div>
+  
