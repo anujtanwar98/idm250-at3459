@@ -7,6 +7,11 @@
         the_post_thumbnail();
     }
 ?>
+<div class="text-center my-website-title">
+    <?php
+        echo get_the_title();
+    ?>
+</div>
 <?php 
 $image = get_field('home_main_image');
 if( !empty( $image ) ): ?>
@@ -16,9 +21,10 @@ if( !empty( $image ) ): ?>
 <?php endif; ?>
 
 <?php
-    echo get_the_title();
+    // echo get_the_title();
     get_template_part('components/content');
 ?>
+<?php get_template_part('components/card'); ?>
 <?php
     get_footer();
 ?>

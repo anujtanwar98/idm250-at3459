@@ -21,6 +21,14 @@
     border: none;
 }
 
+.my-website-title {
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--sec-color);
+    padding: 20px 0 0;
+}
+
 .content-blocks h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -233,3 +241,51 @@
   }
 
 /* 404 end */
+
+
+/* card home start */
+
+.my-card-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    /* padding: 40px; */
+}
+.my-card-images {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.card-img-top {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--black-color);
+}
+
+.featured-main-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--ter-color);
+}
+  
+  
+
+/* card home end */
