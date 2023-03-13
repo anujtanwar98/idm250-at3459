@@ -249,7 +249,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -257,6 +258,8 @@
 }
 .my-card-images {
     margin: 0 auto;
+    max-width: 250px;
+    text-align: center;
     width: 100%;
 }
 
@@ -267,8 +270,9 @@
 
 .card-img-top {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     object-fit: cover;
+    margin: 0 auto;
 }
 
 .card-title {
@@ -277,6 +281,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--black-color);
+    text-align: center;
 }
 
 .featured-main-title{
@@ -285,7 +290,28 @@
     margin-bottom: 1rem;
     color: var(--ter-color);
 }
-  
+
+.my-main-card {
+    margin: 20px auto;
+    padding: 10px;
+    width: 350px;
+}
   
 
 /* card home end */
+
+/* my single shoes start */
+
+.my-single-shoes-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    width: 100%;
+    object-fit: cover;
+    padding: 20px;
+}
+
+/* my single shoes end */
