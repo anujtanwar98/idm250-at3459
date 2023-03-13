@@ -7,7 +7,7 @@
 :root{
     --main-color: #d5c8ff;
     --sec-color: #9f85f7;
-    --ter-color: #FFF1D9;
+    --ter-color: #392777;
     --fourth-color: #FFFCF7;
     --white-color: #fff;
     --black-color: #000;
@@ -191,6 +191,12 @@
 
 .single-page-title {
     font-size: 2.5rem;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--ter-color);
 }
 
 
