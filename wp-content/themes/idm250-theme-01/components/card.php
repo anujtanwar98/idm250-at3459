@@ -10,8 +10,8 @@ $all_shoes = new WP_Query($shoes);
 ?>
 <div>
     <div class="featured-shoes">
-        <div class="text-center featured-main-title">
-            <h2>Featured Shoes</h2>
+        <div class="text-center">
+            <h2 class="featured-main-title">Featured Shoes</h2>
         </div>
         <div class="d-flex my-card-box">
             <?php

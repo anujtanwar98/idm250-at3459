@@ -286,6 +286,7 @@
 
 .featured-main-title{
     font-size: 2.5rem;
+    font-family: poppins;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--ter-color);
