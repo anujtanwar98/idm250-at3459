@@ -13,7 +13,7 @@ $all_shoes = new WP_Query($shoes);
         <div class="text-center">
             <h2 class="featured-main-title">Featured Shoes</h2>
         </div>
-        <div class="d-flex my-card-box">
+        <div class=" my-card-box">
             <?php
                 // The Loop
                 if ($all_shoes->have_posts()) {

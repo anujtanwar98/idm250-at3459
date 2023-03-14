@@ -25,6 +25,7 @@ if( !empty( $image ) ): ?>
     get_template_part('components/content');
 ?>
 <?php get_template_part('components/card'); ?>
+<?php get_template_part('components/logo-shoes'); ?>
 <?php
     get_footer();
 ?>

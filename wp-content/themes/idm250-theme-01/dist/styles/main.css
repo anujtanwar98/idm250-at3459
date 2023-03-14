@@ -270,7 +270,7 @@
 
 .card-img-top {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     object-fit: cover;
     margin: 0 auto;
 }
@@ -316,3 +316,40 @@
 }
 
 /* my single shoes end */
+
+
+/* custom shoes start */
+
+.my-custom-shoes-images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+.my-custom-shoes-images-ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.my-custom-shoes-images-li {
+    margin: 20px;
+}
+
+.my-custom-shoes-images-img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* custom shoes end */
