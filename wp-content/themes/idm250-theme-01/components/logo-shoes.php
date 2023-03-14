@@ -12,7 +12,7 @@
                 <?php foreach( $images as $image ): ?>
                     <li class="my-custom-shoes-images-li">
                         <a href="<?php echo esc_url($image['url']); ?>">
-                            <img class="my-custom-shoes-images-img" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <img class="my-custom-shoes-images-img" src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                         </a>
                         <p><?php echo esc_html($image['caption']); ?></p>
                     </li>
