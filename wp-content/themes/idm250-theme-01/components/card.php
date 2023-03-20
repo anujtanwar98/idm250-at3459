@@ -11,7 +11,7 @@ $all_shoes = new WP_Query($shoes);
 <div>
     <div class="featured-shoes">
         <div class="text-center">
-            <h2 class="featured-main-title">Featured Shoes</h2>
+            <h2 class="featured-main-title"><?php the_field('home_featured_text'); ?></h2>
         </div>
         <div class=" my-card-box">
             <?php

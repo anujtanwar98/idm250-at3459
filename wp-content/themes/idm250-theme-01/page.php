@@ -3,7 +3,7 @@
 ?>
 
 <!-- this is the best practice -->
-<h1 class="text-center">
+<h1 class="text-center my-website-title">
     <?php echo get_the_title(); ?>
 </h1>
 <?php

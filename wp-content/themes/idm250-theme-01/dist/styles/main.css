@@ -438,6 +438,7 @@ p {
 
 .my-custom-shoes-images-li {
     margin: 20px;
+    list-style: none;
 }
 
 .my-custom-shoes-images-img {
@@ -465,3 +466,44 @@ p {
 }
 
 /* blogs end */
+
+
+/* sidebar start */
+
+.sidebar-page-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebar-sidebar {
+    width: 30%;
+    overflow-y: auto;
+    background-color: var(--main-color);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-sidebar h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.sidebar-sidebar-content {
+    padding-right: 15px; /* This adds padding to the right side of the sidebar content to prevent it from overlapping with the scrollbar */
+}
+@media screen and (max-width: 880px) {
+    .sidebar-sidebar {
+        display: none;
+    }    
+}
+
+/* sidebar end */

@@ -26,6 +26,26 @@
             "max_size": "",
             "mime_types": "",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_6418ccc1852ca",
+            "label": "home featured text",
+            "name": "home_featured_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -46,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678148318
+    "modified": 1679346968
 }
