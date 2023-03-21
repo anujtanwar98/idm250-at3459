@@ -47,9 +47,9 @@ $menu = get_theme_menu('primary-menu');
         if( !empty( $image ) ): ?>
           <img class="not-found" src="<?php echo esc_url($image['url']); ?>" class="img-fluid" alt="<?php echo esc_attr($image['alt']); ?>" />
         <?php endif; ?>
-        <h1 class="error-title">404 Error Page</h1>
-        <p class="error-sub">The page you are looking for might have been removed or doesn't exist.</p>
-        <a href="<?php echo home_url(); ?>" class="btn btn-primary my-404-home">Go back to homepage</a>
+        <h1 class="error-title"><?php the_field('404_text_title', 'option'); ?></h1>
+        <p class="error-sub"><?php the_field('404_text_subtitle', 'option'); ?></p>
+        <a href="<?php echo home_url(); ?>" class="btn btn-primary my-404-home"><?php the_field('404_text_button', 'option'); ?></a>
       </div>
     </div>
   </div>

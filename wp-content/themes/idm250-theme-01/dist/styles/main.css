@@ -333,7 +333,11 @@ ol {
   
   .my-404-home:hover {
     background-color: var(--sec-color);
-    border-color: var(--main-color);
+    /* border-color: var(--main-color); */
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
   }
   
   .img-fluid {
