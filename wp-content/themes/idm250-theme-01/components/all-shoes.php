@@ -1,7 +1,7 @@
 <?php 
 $shoes =[
     'post_type' => 'shoes',
-    'posts_per_page' => 20,
+    'posts_per_page' => 18,
     'orderby' => 'date',
     'order' => 'DESC'
 ];

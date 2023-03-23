@@ -222,7 +222,7 @@ ol {
 }
 
 .my-nav-links {
-    padding: 0 40px;
+    padding: 0 10px;
 }
 
 .my-nav-links-a {
@@ -475,6 +475,7 @@ ol {
     /* border: 2px solid var(--sec-color); */
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* custom shoes end */

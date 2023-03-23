@@ -1,6 +1,6 @@
 <div>
     <div>
-        <h1 class="text-center">
+        <h1 class="text-center featured-main-title">
             <?php the_field('home_heading_logo_shoes'); ?>
         </h1>
     </div>
