@@ -1,11 +1,11 @@
 {
-    "key": "group_641cdf714341f",
-    "title": "post shoes",
+    "key": "group_641d209de5193",
+    "title": "main blog post",
     "fields": [
         {
-            "key": "field_641cdf716201c",
-            "label": "blog main text",
-            "name": "blog_main_text",
+            "key": "field_641d209e3faca",
+            "label": "main blog post text",
+            "name": "main_blog_post_text",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -23,9 +23,9 @@
             "append": ""
         },
         {
-            "key": "field_641ce27883907",
-            "label": "blog main second text",
-            "name": "blog_main_second_text",
+            "key": "field_641d21013facb",
+            "label": "main blog post second text",
+            "name": "main_blog_post_second_text",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -43,9 +43,9 @@
             "append": ""
         },
         {
-            "key": "field_641ce29ab7ff1",
-            "label": "blog main second image",
-            "name": "blog_main_second_image",
+            "key": "field_641d21153facc",
+            "label": "main blog post image",
+            "name": "main_blog_post_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -73,7 +73,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "shoes"
+                "value": "post"
             }
         ]
     ],
@@ -86,5 +86,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1679630533
+    "modified": 1679630645
 }
