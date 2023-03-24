@@ -593,3 +593,14 @@ ol {
 }
 
 /* detail shoe page end */
+
+/* shoe animation start */
+
+.shoe {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform-origin: center center;
+}
+
+/* shoe animation end */
