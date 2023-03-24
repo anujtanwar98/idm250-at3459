@@ -544,11 +544,11 @@ ol {
 
 .main-container-box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     width: 100%;
     padding: 0  40px 40px 40px;
@@ -557,7 +557,7 @@ ol {
 .box1-text {
     font-size: 1.25rem;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 350px;
     text-align: left;
     width: 100%;
 }
@@ -578,7 +578,7 @@ ol {
 .box3-text {
     font-size: 1.25rem;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 350px;
     text-align: right;
     width: 100%;
 }
