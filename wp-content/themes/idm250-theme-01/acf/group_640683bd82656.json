@@ -97,7 +97,7 @@
             "label": "404 text button",
             "name": "404_text_button",
             "aria-label": "",
-            "type": "text",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -106,11 +106,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "array"
         },
         {
             "key": "field_6419fa4ced716",
@@ -171,5 +167,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1679424167
+    "modified": 1679618479
 }

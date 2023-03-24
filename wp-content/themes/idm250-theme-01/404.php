@@ -11,7 +11,15 @@
             <?php endif; ?>
             <h1 class="error-title"><?php the_field('404_text_title', 'option'); ?></h1>
             <p class="error-sub"><?php the_field('404_text_subtitle', 'option'); ?></p>
-            <a href="<?php echo home_url(); ?>" class="btn btn-primary my-404-home"><?php the_field('404_text_button', 'option'); ?></a>
+            <?php 
+                $link = get_field('404_text_button', 'option');
+                if( $link ): 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                    <a class="button btn btn-primary my-404-home" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
         </div>
         </div>
     </div>

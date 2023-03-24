@@ -537,3 +537,50 @@ ol {
 }
 
 /* sidebar end */
+
+
+
+/* detail shoe page start */
+
+.main-container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0  40px 40px 40px;
+}
+
+.box1-text {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: left;
+    width: 100%;
+}
+.box2-image {
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.box2-image:hover {
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 0 10px 0 rgba(213, 200, 255, 0.6);
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+.box3-text {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: right;
+    width: 100%;
+}
+
+/* detail shoe page end */

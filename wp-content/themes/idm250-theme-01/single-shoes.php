@@ -7,6 +7,7 @@
     <img class="my-single-shoes-images" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_title(); ?> Featured Image">
   </div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <?php get_template_part('components/detail-shoe-card'); ?>
   <?php get_template_part('components/content'); ?>
 </article>
 
