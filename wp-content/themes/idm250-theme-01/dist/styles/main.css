@@ -579,9 +579,10 @@ ol {
 }
 .box2-image:hover {
     /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
-    box-shadow: 0 0 10px 0 rgba(213, 200, 255, 0.6);
+    box-shadow: 0 0 10px 0 rgba(213, 200, 255, 0.8);
     transform: scale(1.05);
     border-radius: 20px;
+    background-color: rgba(213, 200, 255, 0.4);
 }
 .box3-text {
     font-size: 1.25rem;

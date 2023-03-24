@@ -7,7 +7,9 @@
         $image = get_field('main_blog_post_image');
         if( !empty( $image ) ): ?>
             <div class="rounded-2">
-            <img class="main-image" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <a href="<?php echo esc_url($image['url']); ?>">
+                <img class="main-image" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            </a>
             </div>
     <?php endif; ?>
     </div>
