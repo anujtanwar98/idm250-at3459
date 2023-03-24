@@ -500,6 +500,14 @@ ol {
 
 /* sidebar start */
 
+.wp-block-embed__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
 .sidebar-page-container {
     display: flex;
     flex-direction: row;
